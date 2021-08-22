@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Travel Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  </head>
+  <body>
+    <div class="temp"></div>
+    <div class="first-block"></div>
+    <div class="second-block"></div>
+    <div class="loader">
+      <ul>
+        <li>K</li>
+        <li>A</li>
+        <li>T</li>
+        <li>S</li>
+        <li>U</li>
+        <li>B</li>
+        <li>A</li>
+      </ul>
+    </div>
+    <div class="third-block"></div>
+    <div class="menu">
+      <ion-icon name="menu"></ion-icon>
+    </div>
+    <div class="logo">
+      <span>KATSUBA</span>
+    </div>
+    <div class="content">
+      <div class="heading">
+        <span>One Piece</span>
+      </div>
+      <div class="desc">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+          omnis nostrum eum, ipsa quia voluptatem. Quia ut, iste ad obcaecati
+          doloremque voluptas porro at maiores eaque?
+        </p>
+      </div>
+      <div class="link">
+        <a
+          href="http://animevietsub.tv/phim/one-piece-dao-hai-tac-a1/"
+          target="_blank"
+        >
+          <button type="button">WATCH NOW</button>
+        </a>
+      </div>
+    </div>
+    <div class="img">
+      <img src="./all_member.jpg" alt="" />
+    </div>
+    <div class="media">
+      <ul>
+        <li><i class="fas fa-skull"></i></li>
+        <li><i class="fas fa-anchor"></i></li>
+        <li><i class="fas fa-ship"></i></li>
+      </ul>
+    </div>
+
+    <script type="text/javascript">
+      TweenMax.from(".logo", 1.6, {
+        delay: 5.9,
+        opacity: 0,
+        y: 30,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".menu", 1.6, {
+        delay: 6.0,
+        opacity: 0,
+        y: 30,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".heading", 1.6, {
+        delay: 6.1,
+        opacity: 0,
+        y: 30,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".desc", 1.6, {
+        delay: 6.2,
+        opacity: 0,
+        y: 30,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from("button", 1.6, {
+        delay: 6.3,
+        opacity: 0,
+        y: 30,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".watch", 1.6, {
+        delay: 6.4,
+        opacity: 0,
+        y: 30,
+        rotation: 90,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.staggerFrom(
+        ".media ul li",
+        2,
+        {
+          delay: 6.5,
+          opacity: 0,
+          y: 40,
+          ease: Expo.easeInOut,
+        },
+        0.2
+      );
+    </script>
+  </body>
+</html>
